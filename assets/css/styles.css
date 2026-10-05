@@ -1,0 +1,237 @@
+@import url('reset.css');
+
+:root {
+  --primary-blue: #33A8DB;
+  --dark-blue: #1472B7;
+  --dark-bg: #000000;
+  --card-bg: #252525;
+  --border-glow: #33A8DB80;
+  --text-white: #FFFFFF;
+}
+
+body {
+  background-color: var(--dark-bg);
+  color: var(--text-white);
+  overflow-x: hidden;
+}
+
+h2 {
+  font-size: 2rem;
+  color: var(--primary-blue);
+  font-weight: bold;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+
+p {
+  color: var(--text-white);
+  line-height: 1.6;
+}
+
+section {
+  margin: 100px auto;
+  max-width: 1200px;
+  padding: 0 20px;
+}
+
+/* --- BANNER PRINCIPAL --- */
+.banner {
+  background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(49, 168, 221, .2), rgba(0, 0, 0, .6)), url('../images/banner.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 600px;
+  padding: 60px 20px;
+  border-bottom: 1px solid var(--border-glow);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner .banner-content {
+  color: var(--text-white);
+  max-width: 650px;
+  margin: auto;
+  text-align: center;
+}
+
+.banner .logo {
+  background-color: rgba(0, 0, 0, .3);
+  height: 240px;
+  width: 240px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 25px rgba(51, 168, 219, 0.3);
+}
+
+.banner .logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.banner h1 {
+  font-size: 2.6rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: transparent;
+  background: -webkit-linear-gradient(var(--primary-blue), var(--dark-blue));
+  background-clip: text;
+  -webkit-background-clip: text;
+  letter-spacing: 2px;
+}
+
+.banner p {
+  font-size: 1.25rem;
+  margin: 16px 0 28px;
+  color: #E2E8F0;
+}
+
+.banner .banner-content button {
+  color: var(--primary-blue);
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 16px 36px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  background-color: transparent;
+  border: 2px solid var(--primary-blue);
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.banner .banner-content button:hover {
+  background: linear-gradient(135deg, var(--primary-blue), var(--dark-blue));
+  color: var(--text-white);
+  box-shadow: 0 0 20px rgba(51, 168, 219, 0.6);
+  transform: translateY(-2px);
+}
+
+/* --- CONTEÚDO DO CURSO --- */
+#course-content {
+  max-width: 800px;
+  text-align: center;
+}
+
+#course-content .modules-list {
+  margin: 32px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+#course-content .modules-list .module {
+  color: var(--text-white);
+  max-width: 550px;
+  width: 100%;
+  margin: 0 auto;
+  border: 1px solid var(--primary-blue);
+  background-color: var(--card-bg);
+  padding: 18px 24px;
+  border-radius: 100px;
+  box-shadow: inset -5px 6px 8px rgba(0, 0, 0, .7);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#course-content .modules-list .module:hover {
+  transform: scale(1.02);
+  box-shadow: inset -5px 6px 8px rgba(0, 0, 0, .7), 0 0 15px rgba(51, 168, 219, 0.4);
+}
+
+#course-content .modules-list .module span {
+  color: var(--primary-blue);
+  font-weight: bold;
+}
+
+/* --- TRANSFORME O MUNDO --- */
+#transform-world {
+  min-height: 560px;
+  max-width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-image: url("../images/woman-code.png");
+  background-attachment: fixed;
+  border-top: 1px solid var(--border-glow);
+  border-bottom: 1px solid var(--border-glow);
+  padding: 160px 40px;
+  display: flex;
+  align-items: center;
+}
+
+#transform-world p {
+  font-weight: 900;
+  font-size: 2.6rem;
+  text-transform: lowercase;
+  max-width: 300px;
+  text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.8), 3px 2px var(--primary-blue);
+  line-height: 1.2;
+}
+
+/* --- DESAFIOS PROFISSIONAIS --- */
+#professional-challenges {
+  text-align: center;
+  max-width: 800px;
+}
+
+#professional-challenges img {
+  margin: 32px auto;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* --- FOOTER --- */
+footer {
+  padding: 60px 20px;
+  text-align: center;
+  background-image: linear-gradient(rgba(50, 168, 219, .0), rgba(50, 168, 219, .25));
+  border-top: 1px solid var(--border-glow);
+}
+
+footer .dio-logo {
+  max-width: 280px;
+  height: auto;
+  margin-bottom: 16px;
+}
+
+footer a {
+  color: var(--primary-blue);
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+footer a:hover {
+  text-decoration: underline;
+  color: #70d0ff;
+}
+
+/* --- RESPONSIVIDADE --- */
+@media (max-width: 768px) {
+  .banner h1 {
+    font-size: 2rem;
+  }
+  
+  .banner .logo {
+    height: 180px;
+    width: 180px;
+  }
+
+  #transform-world {
+    padding: 100px 20px;
+  }
+
+  #transform-world p {
+    font-size: 2rem;
+  }
+
+  #course-content .modules-list .module {
+    border-radius: 20px;
+  }
+}

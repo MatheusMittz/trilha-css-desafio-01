@@ -1,22 +1,85 @@
-# Desafio 01: Criando sua primeira Landing Page com HTML e CSS
+# Desafio 01: Criando sua Primeira Landing Page com HTML e CSS
 
-Bem vindo(a) ao primeiro desafio da Trilha de CSS da DIO! Nela, você vai construir sua primeira Landing Page com HTML e CSS, colocando em prática os fundamentos do CSS,
-as propriedades básicas da linguagem de estilização, além de trabalhar com as unidades de medidas relativas e absolutas que aprendemos ao longo da trilha.
+<p align="center">
+  <img src="assets/images/banner.png" alt="Banner Trilha de CSS" width="600" />
+</p>
 
-[Clique aqui](https://micheleambrosio.github.io/dio-trilha-css-desafio-01/) para acessar o resultado final da Landing Page criada a partir do desafio!
+<p align="center">
+  <a href="https://dio.me/"><img src="https://img.shields.io/badge/DIO-CSS%20Track-28DA77?logo=youtube" alt="DIO - CSS Track"></a>
+  <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML"><img src="https://img.shields.io/badge/HTML5-Semântico-E34F26?logo=html5&logoColor=white" alt="HTML5"></a>
+  <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS"><img src="https://img.shields.io/badge/CSS3-Moderno-1572B6?logo=css3&logoColor=white" alt="CSS3"></a>
+  <a href="https://www.figma.com/file/3PiokoJj9IhGDnNiWAJbz7/DIO---Desafio-01?node-id=0%3A1"><img src="https://img.shields.io/badge/Figma-Protótipo-F24E1E?logo=figma&logoColor=white" alt="Figma"></a>
+</p>
 
-![image](https://user-images.githubusercontent.com/55519539/183538055-6cce606c-7d1d-4d15-a4be-ffeb5b37c956.png)
+---
 
-Para você realizar o desafio, basta fazer um **fork** para o seu GitHub e começar a mexer no projeto.
-Dentro da pasta *main*, você vai encontrar todas as imagens e o arquivo HTML, contendo a estrutura básica da sua página, faltando apenas
-realizar a estilização da sua página. É necessário que você faça toda a parte responsável por interligar sua página HTML com suas folhas
-de estilo para que o resultado da estilização funcione.
+## 📌 Sobre o Desafio
 
-[Link do Figma](https://www.figma.com/file/3PiokoJj9IhGDnNiWAJbz7/DIO---Desafio-01?node-id=2%3A6) contendo o protótipo do desafio para
-que você possa se basear.
+Projeto prático desenvolvido para o primeiro desafio da **Trilha de CSS Web Developer** da [Digital Innovation One (DIO)](https://dio.me), ministrado pela instrutora **Michele Ambrosio**.
 
-*Observações: para aplicar os textos em gradiente, utilize a propriedade CSS background-clip, porém, para funcionar em alguns navegadores,
-é necessário utilizar a propriedade -webkit-background-clip: text;*
+A proposta consistiu na estilização e construção completa de uma **Landing Page institucional** baseada em um layout do Figma, aplicando na prática:
 
-Caso tenha alguma dúvida, ou queira comparar o resultado do desafio que você fez, nós temos o site finalizado na branch *final*. Basta alterar a branch do projeto
-utilizando o comando `git checkout final` no seu terminal.
+- 🧱 **Reset CSS** com tipografia importada via Google Fonts (`Raleway`).
+- 🎨 **Gradientes e Efeitos Visuais:** Uso de `linear-gradient` composto com imagem de fundo, bordas translúcidas e textos estilizados via `-webkit-background-clip: text`.
+- 📐 **Unidades de Medida:** Combinação de medidas absolutas (`px`) e relativas (`rem`, `%`, `vh`).
+- 🌌 **Parallax com Imagem Fixa:** Efeito `background-attachment: fixed` na seção de destaque.
+- 📱 **Design Responsivo:** Media queries para garantir fluidez e boa visualização em dispositivos móveis.
+- ✨ **Microinterações:** Efeitos de hover e transições suaves nos botões de Call-to-Action (CTA) e cards de módulos.
+
+---
+
+## 🎨 Protótipo e Referência
+
+- 🔗 **[Protótipo Oficial no Figma](https://www.figma.com/file/3PiokoJj9IhGDnNiWAJbz7/DIO---Desafio-01?node-id=0%3A1)**
+
+---
+
+## 📁 Estrutura do Projeto
+
+```text
+├── assets/
+│   ├── css/
+│   │   ├── reset.css            # Normalização de estilos e fontes
+│   │   └── styles.css           # Estilização completa da Landing Page
+│   └── images/
+│       ├── banner.png           # Imagem de fundo do cabeçalho
+│       ├── dio-logo.png         # Logo DIO Make the Change
+│       ├── logo.png             # Logo Trilha de CSS
+│       ├── professional-challenges.png
+│       └── woman-code.png       # Background da seção de destaque
+├── index.html                   # Estrutura HTML semântica
+└── README.md                    # Documentação do projeto
+```
+
+---
+
+## 🚀 Como Visualizar Localmente
+
+Basta abrir o arquivo `index.html` em qualquer navegador web, ou através da extensão **Live Server** no VS Code.
+
+---
+
+## 👨‍💻 Desenvolvedor
+
+<p>
+  <img 
+    align="left" 
+    margin="10" 
+    width="90" 
+    style="border-radius: 50%;" 
+    src="https://avatars.githubusercontent.com/u/104115011?v=4" 
+    alt="Matheus Araujo"
+  />
+  <p>
+    &nbsp;&nbsp;&nbsp;<b>Matheus Araujo</b><br>
+    &nbsp;&nbsp;&nbsp;Desenvolvedor de Software<br>
+    &nbsp;&nbsp;&nbsp;
+    <a href="https://github.com/MatheusMittz">GitHub</a>&nbsp;|&nbsp;
+    <a href="https://www.linkedin.com/in/">LinkedIn</a>
+  </p>
+</p>
+<br/><br/>
+
+---
+
+> Desenvolvido por [Matheus Araujo](https://github.com/MatheusMittz) a partir do template educacional da [DIO](https://dio.me).
